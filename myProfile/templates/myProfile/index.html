@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myProfile/style.css' %}">
+</head>
+
+<body> 
+
+    <div class="container">
+        <h1 class="logo-name">Lace</h1>
+
+        <section class="profile">
+            <div class="row">
+                <div class="col-md">
+                    <div class="introduction">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="p-2 align-self-center">
+                                <p class="lead">
+                                    Hi! <strong>Lester Ace Antipino</strong> a desktop software developer based in Manila, Philippines.
+                                    I've been working since 2016 and work mainly with automation & data processing using .NET framework. 
+                                    I also have a knowledge in Full-Stack Development by using Django framework and Vue.js
+                                </p>
+                            </div>
+
+                            <div id="pic-container" class="p-2">
+                                <img class="profile-pic" src="{% static 'myProfile/images/mmm.jpg' %}" alt="" srcset="">
+                            </div>
+                        </div>
+
+                        <ul id="account-links" class="nav">
+                           <li class="nav-item">
+                                <a class="nav-link" href="https://facebook.com/Lacennister">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/Lacennister">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://dev.to/lacennister">
+                                    <strong>dev</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/laceantipino">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="Skills">
+            {% comment %} <h2 class="section-title">Skills</h2> {% endcomment %}
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'myProfile/images/mmm.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'myProfile/images/mmm.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

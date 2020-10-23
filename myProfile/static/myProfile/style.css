@@ -1,0 +1,46 @@
+
+.logo-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 110px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#pic-container {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 50%;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.introduction {
+    width: 70%;
+    margin: auto;
+}
+
+.introduction .lead {
+    margin: 0;
+}
+
+#account-links .nav-link {
+    color: rgb(60, 60, 60);
+    padding-left: 0;
+    padding-right: 2em;
+}
+#account-links .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* SKILLS */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
