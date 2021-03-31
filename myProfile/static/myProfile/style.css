@@ -4,7 +4,7 @@
     font-size: 110px;
     width: 100%;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 1.2rem;
 }
 
 #pic-container {
@@ -19,12 +19,12 @@
     border-radius: 50%;
 }
 
-.introduction {
+.wrapper {
     width: 70%;
     margin: auto;
 }
 
-.introduction .lead {
+.wrapper .lead {
     margin: 0;
 }
 
@@ -53,8 +53,8 @@
 }
 
 
-@media screen and (min-width:320px) {
-    .introduction {
+@media screen and (max-width: 768px) {
+    .wrapper {
         width: 100%;
     }
 }

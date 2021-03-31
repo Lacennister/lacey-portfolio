@@ -20,22 +20,21 @@
         <section class="profile">
             <div class="row">
                 <div class="col-md">
-                    <div class="introduction">
-                        <div class="d-flex flex-sm-row flex-column justify-content-center">
-                            <div id="pic-container" class="p-2">
-                                <img class="profile-pic" src="{% static 'myProfile/images/mmm.jpg' %}" alt="" srcset="">
-                            </div>
-
+                    <div class="wrapper">
+                        <div class="d-flex flex-sm-row flex-column-reverse justify-content-center">
                             <div class="p-2 align-self-center">
                                 <p class="lead">
-                                    Hi! <strong>Lester Ace Antipino</strong> a desktop software developer based in Manila, Philippines.
+                                    Hello!, I'm <strong>Lester Ace Antipino</strong> a desktop software developer based in Manila, Philippines.
                                     I've been working since 2016 and work mainly with automation & data processing using <em class="dotnet">.NET framework</em>. 
                                     I also have a knowledge in <em class="fullstack">Full-Stack Development</em>.
                                 </p>
                             </div>
+                            <div id="pic-container" class="p-2 align-self-center">
+                                <img class="profile-pic" src="{% static 'myProfile/images/mmm.jpg' %}" alt="" srcset="">
+                            </div>
                         </div>
 
-                        <ul id="account-links" class="nav p-2">
+                        <ul id="account-links" class="nav p-2 d-flex justify-content-center">
                            <li class="nav-item">
                                 <a class="nav-link" href="https://facebook.com/Lacennister">
                                     <i class="fa fa-facebook"></i>
@@ -65,30 +64,36 @@
         <hr class="my-5">
 
         <section class="Skills">
-            {% comment %} <h2 class="section-title">Skills</h2> {% endcomment %}
 
-            <div class="row">
-                <div class="col-md">
-                    <div class="card" style="width: 18rem;">
+            <div class="wrapper">
+                <div class="d-flex flex-sm-row flex-column justify-content-between">
+                    <div class="card" style="width: 18rem; margin: 0 1em;">
                         <img src="{% static 'myProfile/images/mmm.jpg' %}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
+                        <div class="card-body">
+                            <h6 class="card-title" style="text-align: center;">Desktop Software Development</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md">
-                    <div class="card" style="width: 18rem;">
+
+                    <div class="card" style="width: 18rem; margin: 0 1em;">
                         <img src="{% static 'myProfile/images/mmm.jpg' %}" class="card-img-top" alt="...">
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-title" style="text-align: center;">Full Stack Web Development</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+            {% comment %} <div class="row">
+                <div class="col-md justify-content-center">
+               
+                </div>
+            </div> {% endcomment %}
         </section>
 
     </div> 

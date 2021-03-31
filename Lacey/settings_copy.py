@@ -12,21 +12,23 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+TEMPLATE_DIR = BASE_DIR / "templates"
+STATIC_DIR = BASE_DIR / "static"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-import os
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = '4b_&&*w@m$o$f3t^p4pj8+l%3&7epq1^g+x393m@2ska37epq9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = []
 
 if DEBUG == False :
     ALLOWED_HOSTS = ['laceantipino.dev', 'www.laceantipino.dev']
@@ -124,8 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    STATIC_DIR,
 ]
 
